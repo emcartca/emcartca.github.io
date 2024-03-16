@@ -27,23 +27,47 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 100px 20px 20px; /* adjust top padding to make room for header */
-    overflow-y: auto; /* allow content to scroll */
+    overflow-y: auto; /* allow content to scroll */    /* Two columns on wide screens */
+    width: 45%;
+    float: left;
+    margin-right: 5%;
   }
-  .containerbox {
-    width: 80%;
-    max-width: 600px; /* adjust as needed */
+  .containerbox {    
+    max-width: 1500px; /* adjust as needed */
     margin: 20px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* white background with 50% opacity */
+    background-color: rgba(255, 255, 255, 0.9); /* white background with 90% opacity */
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Two columns on wide screens */
+    width: 45%;
+    float: left;
+    margin-right: 5%;
   }
+
+ /* Media query for narrow screens */
+  @media only screen and (max-width: 768px) {
+    .containerbox {
+      width: 100%; /* One column on narrow screens */
+      float: none;
+      margin-right: 0;
+    }
+  }
+  
   img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
     padding-bottom: 20px;
+  }
+  
+  .container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
   }
 </style>
 </head>
@@ -74,9 +98,42 @@
 </div>
 
 <div class="containerbox">
+  <h2>Container 0</h2>
+  <img src="dish.jpg" alt="Image 1">
+  <p>This is the paragraph of text for container 1.</p>
+</div>
+
+<div class="containerbox">
   <h2>Container 1</h2>
   <img src="dish.jpg" alt="Image 1">
   <p>This is the paragraph of text for container 1.</p>
+</div>
+
+<div class="containerbox">
+  <h2>Container 2</h2>
+  <img src="dish.jpg" alt="Image 1">
+  <p>This is the paragraph of text for container 1.</p>
+</div>
+
+<div class="containerbox">
+  <h2>Container 3</h2>
+  <img src="dish.jpg" alt="Image 1">
+  <p>This is the paragraph of text for container 1.</p>
+</div>
+
+<div class="containerbox">
+  <h2>Container 4</h2>
+  <img src="dish.jpg" alt="Image 1">
+  <p>This is the paragraph of text for container 4. background image that doesn't scroll, but is somehow cropped so it fills the screen nicely. background image that doesn't scroll, but is somehow cropped so it fills the screen nicely. </p>
+</div>
+
+<div class="container">
+  <h2>Welcome to Your Personal Web Page</h2>
+  <p>This is where you can introduce yourself and share some information about you.</p>
+  
+  <h3>Images</h3>
+  <p>Here are some images:</p>
+  <img src="tin3.jpg" alt="Image 1">
 </div>
 
 </body>
