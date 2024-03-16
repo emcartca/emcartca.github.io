@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Personal Web Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('omandubai/images/IMG_3192dad2309.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* dark gray with some transparency */
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* ensure it's above other content */
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px 20px 20px; /* adjust top padding to make room for header */
+    overflow-y: auto; /* allow content to scroll */
+  }
+  .containerbox {
+    width: 80%;
+    max-width: 600px; /* adjust as needed */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* white background with 50% opacity */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Your Website Header</h1>
+</div>
+
+<div class="container">
+  <h2>Welcome to Your Personal Web Page</h2>
+  <p>This is where you can introduce yourself and share some information about you.</p>
+  
+  <h3>Images</h3>
+  <p>Here are some images:</p>
+  <img src="tin3.jpg" alt="Image 1">
+  <img src="bicone_small.jpg" alt="Image 2">
+  <img src="image3.jpg" alt="Image 3">
+  <img src="image4.jpg" alt="Image 4">
+  <img src="image5.jpg" alt="Image 5">
+  <img src="image6.jpg" alt="Image 6">
+  <img src="image7.jpg" alt="Image 7">
+  <img src="image8.jpg" alt="Image 8">
+  
+  <h3>About Me</h3>
+  <p>Insert your paragraphs of text here to describe yourself.</p>
+  <p>Can you add a large background image that doesn't scroll, but is somehow cropped so it fills the screen nicely on mobile or on desktop. I have an image that is about 1920x1200 so it will fill most screens, but on mobile it should be cropped to fit the vertical axis only.  The rest of the content should scroll over the image. I would also like a simple header bar, white text on dark gray, that doesn't scroll..</p>
+</div>
+
+<div class="containerbox">
+  <h2>Container 1</h2>
+  <img src="dish.jpg" alt="Image 1">
+  <p>This is the paragraph of text for container 1.</p>
+</div>
+
+</body>
+</html>
